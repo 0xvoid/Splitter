@@ -1,0 +1,168 @@
+{
+  "contract_name": "Splitter",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "firstReceiver",
+          "type": "address"
+        },
+        {
+          "name": "secondReceiver",
+          "type": "address"
+        }
+      ],
+      "name": "split",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "allotment",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "killMe",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": false,
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_allocationAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "splitAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogSplitAllocation",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "withdrawer",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "withdrawnAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogWithdrawal",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60008054600160a060020a03191633600160a060020a03161790555b5b6103fc8061003c6000396000f300606060405236156100515763ffffffff60e060020a6000350416630f2c932981146100655780633ccfd60b146100935780636b6cc67f146100ba5780638da5cb5b146100eb578063b603cd801461011a575b341561005c57600080fd5b6100635b5b565b005b61007f600160a060020a036004358116906024351661012f565b604051901515815260200160405180910390f35b341561009e57600080fd5b61007f6102ab565b604051901515815260200160405180910390f35b34156100c557600080fd5b6100d9600160a060020a0360043516610367565b60405190815260200160405180910390f35b34156100f657600080fd5b6100fe610379565b604051600160a060020a03909116815260200160405180910390f35b341561012557600080fd5b610063610388565b005b6000808034151561013f57600080fd5b6001341161014c57600080fd5b600160a060020a03851615158061016b5750600160a060020a03841615155b151561017657600080fd5b600160a060020a033316151561018b57600080fd5b5034905060006002825b0615156101a8576002825b04905061020b565b600260001983015b33600160a060020a0381166000908152600160208190526040918290208054820190559390920493506000805160206103b183398151915292909151600160a060020a03909216825260208201526040908101905180910390a15b600160a060020a0380861660009081526001602052604080822080548501905591861681528190208054830190556000805160206103b1833981519152908690839051600160a060020a03909216825260208201526040908101905180910390a16000805160206103b18339815191528482604051600160a060020a03909216825260208201526040908101905180910390a1600192505b505092915050565b600160a060020a033316600090815260016020526040812054819015156102d157600080fd5b50600160a060020a033316600081815260016020526040808220805492905590919082156108fc0290839051600060405180830381858888f19350505050151561031a57600080fd5b7fb4214c8c54fc7442f36d3682f59aebaf09358a4431835b30efb29d52cf9e1e913382604051600160a060020a03909216825260208201526040908101905180910390a1600191505b5090565b60016020526000908152604090205481565b600054600160a060020a031681565b60005433600160a060020a039081169116141561006057600054600160a060020a0316ff5b5b56003885ddc97c768bf422a2c4d99d17f7c08301f52883c5443ad9f650e0c594bccda165627a7a72305820e91df2ed4c9fed6dc16f233fdaa1051c90119170cbf9f96e6858787f15e148eb0029",
+  "networks": {
+    "1515363948320": {
+      "events": {
+        "0x3885ddc97c768bf422a2c4d99d17f7c08301f52883c5443ad9f650e0c594bccd": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_allocationAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "splitAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogSplitAllocation",
+          "type": "event"
+        },
+        "0xb4214c8c54fc7442f36d3682f59aebaf09358a4431835b30efb29d52cf9e1e91": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "withdrawer",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "withdrawnAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogWithdrawal",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x75a81176f9dbde89830ab86c02b46e74bd2d7943",
+      "updated_at": 1515363970859
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1515364246240
+}
