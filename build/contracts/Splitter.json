@@ -253,8 +253,59 @@
       "links": {},
       "address": "0x28e8bc997b4e9a84b9eb10c3fb24dffe82d5ed38",
       "updated_at": 1515456492667
+    },
+    "1515543009488": {
+      "events": {
+        "0x4178b5dd11c67f49c12a2d84335827a1c94e933151472d9ea76c3866e56e6ced": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "firstReceiver",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "secondReceiver",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "splitAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogSplitAllocation",
+          "type": "event"
+        },
+        "0xb4214c8c54fc7442f36d3682f59aebaf09358a4431835b30efb29d52cf9e1e91": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "withdrawer",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "withdrawnAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogWithdrawal",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x734ddc08dfe8be72752384f0b1f80477ea2fa8d0",
+      "updated_at": 1515543021670
     }
   },
   "schema_version": "0.0.5",
-  "updated_at": 1515456492667
+  "updated_at": 1515543021670
 }
